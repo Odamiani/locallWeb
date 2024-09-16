@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -33,7 +35,11 @@ public class Cliente extends PanacheEntityBase {
   @Column(name = "EMAIL", nullable = false)
   private String email;
 
-  @Column(name = "DT_NSC")
-  private LocalDate dataNascimento;
+  @Column(name = "DT_CRI")
+  private LocalDate dataCriacao;
   
+  @Enumerated(EnumType.STRING)
+  @Column(name = "PAPEL", nullable = false)
+  private Papel papel;
+
 }

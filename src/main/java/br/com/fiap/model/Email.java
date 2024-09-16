@@ -38,5 +38,8 @@ public class Email extends PanacheEntityBase {
 
   @Column(name = "DT_CRI", nullable = false)
   private LocalDate data;
+
+  @Column(name = "FAVORITO", nullable = false)
+  private boolean favorito;
   
 }
