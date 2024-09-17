@@ -35,11 +35,15 @@ public class Cliente extends PanacheEntityBase {
   @Column(name = "EMAIL", nullable = false)
   private String email;
 
-  @Column(name = "DT_CRI")
+  @Column(name = "DT_CRI", nullable = false)
   private LocalDate dataCriacao;
   
   @Enumerated(EnumType.STRING)
   @Column(name = "PAPEL", nullable = false)
   private Papel papel;
+
+  @Enumerated(EnumType.STRING)
+  @Column(name = "TEMA", nullable = false)
+  private Tema tema = Tema.CLARO;
 
 }

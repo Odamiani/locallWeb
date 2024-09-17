@@ -22,7 +22,8 @@ CREATE TABLE Cliente (
     SENHA VARCHAR(255) NOT NULL,
     EMAIL VARCHAR(100) NOT NULL,
     DT_CRI DATE NOT NULL,
-    PAPEL VARCHAR(3) NOT NULL
+    PAPEL VARCHAR(3) NOT NULL,
+    TEMA VARCHAR(6) NOT NULL
 );
 
 INSERT INTO Email (ID_DES, ID_REM, CORPO, TITULO, DT_CRI, FAVORITO) VALUES 
@@ -32,7 +33,7 @@ INSERT INTO Email (ID_DES, ID_REM, CORPO, TITULO, DT_CRI, FAVORITO) VALUES
 (4, 2, 'Texto aleatório para o corpo do e-mail. Serve apenas para criar alguns dados de teste.', 'Título do Quarto E-mail', '2024-09-04', FALSE),
 (5, 3, 'Este e-mail fictício possui um corpo de texto aleatório para validar a inserção na tabela.', 'Título do Quinto E-mail', '2024-09-05', FALSE);
 
-INSERT INTO Cliente (USERNAME, SENHA, EMAIL, DT_CRI, PAPEL) VALUES 
-('cliente1', 'senha1', 'cliente1@email.com', '2024-01-01', 'ADM'),
-('cliente2', 'senha2', 'cliente2@email.com', '2024-05-15', 'USR'),
-('cliente3', 'senha3', 'cliente3@email.com', '2024-09-10', 'USR');
+INSERT INTO Cliente (USERNAME, SENHA, EMAIL, DT_CRI, PAPEL, TEMA) VALUES 
+('cliente1', 'senha1', 'cliente1@email.com', '2024-01-01', 'ADM', 'CLARO'),
+('cliente2', 'senha2', 'cliente2@email.com', '2024-05-15', 'USR', 'ESCURO'),
+('cliente3', 'senha3', 'cliente3@email.com', '2024-09-10', 'USR', 'CLARO');
