@@ -10,7 +10,6 @@ import jakarta.ws.rs.core.Response;
 
 @ApplicationScoped
 public class EmailService {
-  teseteee
 
   @Inject
   SpamControlService spamControlService;
